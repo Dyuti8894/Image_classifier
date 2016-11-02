@@ -2,11 +2,11 @@ package com.codifythings.personalassistant;
 
 import java.io.File;
 
-import com.hopding.jrpicam.RPiCamera;
-import com.hopding.jrpicam.enums.AWB;
-import com.hopding.jrpicam.enums.DRC;
-import com.hopding.jrpicam.enums.Encoding;
-import com.hopding.jrpicam.exceptions.FailedToRunRaspistillException;
+//import com.hopding.jrpicam.RPiCamera;
+//import com.hopding.jrpicam.enums.AWB;
+//import com.hopding.jrpicam.enums.DRC;
+//import com.hopding.jrpicam.enums.Encoding;
+//import com.hopding.jrpicam.exceptions.FailedToRunRaspistillException;
 
 public class ImageCapturer {
 
@@ -14,7 +14,7 @@ public class ImageCapturer {
 
 		System.out.println("[DEBUG] Capturing Image");
 
-		RPiCamera piCamera = new RPiCamera(Constants.IMAGE_FOLDER);
+		//RPiCamera piCamera = new RPiCamera(Constants.IMAGE_FOLDER);
 		
 		//Take a still image and save it
 		if (piCamera != null) {
@@ -28,7 +28,7 @@ public class ImageCapturer {
 			piCamera.setEncoding(Encoding.PNG); //Change encoding of images to PNG
 			
 			//Take a 650x650 still image and save it as "/image/query.png"
-			File image = piCamera.takeStill(Constants.IMAGE_NAME, 650, 650);
+			//File image = piCamera.takeStill(Constants.IMAGE_NAME, 650, 650);
 		}		
 	}
 }
