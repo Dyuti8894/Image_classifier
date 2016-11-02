@@ -6,8 +6,8 @@ public class PersonalAssistant {
 
 	private ImageCapturer imageCapturer = null;
 	private VisualRecognizer visualRecognizer = null;
-	private TextToSpeechConverter textToSpeechConverter = null;
-	private AudioSpeaker audioSpeaker = null;
+	//private TextToSpeechConverter textToSpeechConverter = null;
+	//private AudioSpeaker audioSpeaker = null;
 
 	public PersonalAssistant() {
 		imageCapturer = new ImageCapturer();
@@ -30,13 +30,17 @@ public class PersonalAssistant {
 
 			if (result.equals(Constants.RESPONSE_UNKNOWN)) {
 				// Play back response to user
-				audioSpeaker.speak(Constants.AUDIO_TYPE_NOT_RECOGNIZED);
+				//audioSpeaker.speak(Constants.AUDIO_TYPE_NOT_RECOGNIZED);
+				//Have to add the database!!!
+				
 			} else {
 				// Convert result into audio
-				textToSpeechConverter.convert(result);
+				//textToSpeechConverter.convert(result);
 
 				// Play back response to user
-				audioSpeaker.speak(Constants.AUDIO_TYPE_RESPONSE);
+				//audioSpeaker.speak(Constants.AUDIO_TYPE_RESPONSE);
+				
+				//Have to add to database of different class!!
 			}
 
 		} catch (Exception ex) {
