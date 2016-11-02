@@ -12,12 +12,12 @@ public class ImageCapturer {
 
 	public void captureImage() throws Exception {
 
-		System.out.println("[DEBUG] Capturing Image");
+		System.out.println("[DEBUG] checking availability of images ");
 
 		//RPiCamera piCamera = new RPiCamera(Constants.IMAGE_FOLDER);
 		
 		//Take a still image and save it
-		if (piCamera != null) {
+		/*if (piCamera != null) {
 			piCamera.setAWB(AWB.AUTO); //Change Automatic White Balance setting to automatic 
 			piCamera.setDRC(DRC.OFF); //Turn off Dynamic Range Compression
 			piCamera.setContrast(100); //Set maximum contrast
@@ -25,7 +25,7 @@ public class ImageCapturer {
 			piCamera.setQuality(100); //Set maximum quality
 			piCamera.setTimeout(1000); //Wait 1 second to take the image
 			piCamera.turnOnPreview(); //Turn on image preview
-			piCamera.setEncoding(Encoding.PNG); //Change encoding of images to PNG
+			piCamera.setEncoding(Encoding.PNG); //Change encoding of images to PNG*/
 			
 			//Take a 650x650 still image and save it as "/image/query.png"
 			//File image = piCamera.takeStill(Constants.IMAGE_NAME, 650, 650);
