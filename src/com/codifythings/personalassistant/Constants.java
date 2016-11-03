@@ -18,7 +18,7 @@ public interface Constants {
 	//public static String TEXT_TO_SPEECH_PASSWORD = “YOUR_API_KEY”;
 
 	// Response
-	/*public static String RESPONSE_SCORE = "There is a ";
-	public static String RESPONSE_CLASS = " percent chance that this is ";
-	public static String RESPONSE_UNKNOWN = "Unknown";*/
+	//public static String RESPONSE_SCORE = "There is a ";
+	//public static String RESPONSE_CLASS = " percent chance that this is ";
+	public static String RESPONSE_UNKNOWN = "Unknown";
 }
