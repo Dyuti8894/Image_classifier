@@ -1,6 +1,8 @@
 package com.codifythings.personalassistant;
 
-import java.io.File;
+import java.io.*;
+import java.util.*;
+import java.lang.*;
 
 //import com.hopding.jrpicam.RPiCamera;
 //import com.hopding.jrpicam.enums.AWB;
@@ -13,6 +15,7 @@ public class ImageCapturer {
 	public void captureImage() throws Exception {
 
 		System.out.println("[DEBUG] checking availability of images ");
+		
 
 		//RPiCamera piCamera = new RPiCamera(Constants.IMAGE_FOLDER);
 		
