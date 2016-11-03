@@ -16,7 +16,8 @@ public class ImageCapturer {
 
 		System.out.println("[DEBUG] checking availability of images ");
 		
-
+		BufferedImage image = ImageIO.read(new File(Constants.IMAGE_FOLDER));
+		
 		//RPiCamera piCamera = new RPiCamera(Constants.IMAGE_FOLDER);
 		
 		//Take a still image and save it
