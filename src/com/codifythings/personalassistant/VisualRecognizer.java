@@ -47,7 +47,7 @@ public class VisualRecognizer {
 					String className = visualClass.getName();
 					Double classScore = Math.ceil(visualClass.getScore() * 100);
 
-					response = Constants.RESPONSE_SCORE + classScore + Constants.RESPONSE_CLASS + className;
+					response = className;
 
 					break;
 				}
